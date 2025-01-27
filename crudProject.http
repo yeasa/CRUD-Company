@@ -1,0 +1,24 @@
+
+GET http://localhost:5029/hello
+
+###
+
+POST http://localhost:5029/api/departments
+Content-Type: application/json
+
+{
+    "name":"HR",
+    "managerId":103
+}
+
+
+###
+
+
+PUT http://localhost:5029/api/departments
+
+###
+
+DELETE http://localhost:5029/api/departments/3fa85f64-5717-4562-b3fc-2c963f66afa6
+
+###
