@@ -1,17 +1,20 @@
 
-GET http://localhost:5029/hello
+
+GET http://localhost:5029
+###
+
+
+GET http://localhost:5029/api/departments?searchValue=SALL
 
 ###
 
 POST http://localhost:5029/api/departments
-Content-Type: application/json
+content-type:application/json
 
 {
-    "name":"HR",
-    "managerId":103
+    "departmentName":"HR",
+    "managerId": 103
 }
-
-
 ###
 
 
@@ -19,6 +22,5 @@ PUT http://localhost:5029/api/departments
 
 ###
 
-DELETE http://localhost:5029/api/departments/3fa85f64-5717-4562-b3fc-2c963f66afa6
-
+DELETE http://localhost:5029/api/departments/6d096f5a-addc-4a5e-9362-86501ac1e811
 ###
